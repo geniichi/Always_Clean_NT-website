@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Always Clean NT Logo">
+        <nav>
+            <ol>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#description">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <div id="message">
+        <p>Form Submitted</p>
+    </div>
+    <form action="/" onsubmit="handleSubmit(event)" id="contactForm">
+        <div id="topForm">
+            <div id="left_topForm">
+                <div id="username-container">
+                    <label for="Name">Name</label><br>
+                    <input type="text" id="Name" placeholder="Enter Name" minlength="6" maxlength="15"
+                        >
+                </div>
+
+                <div id="email-container">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="example@gmail.com" name="email" id="email" >
+                </div>
+
+                <div id="password-container">
+                    <label for="Address">Address</label><br>
+                    <input type="text" name="Address" id="Address" >
+                </div>
+            </div>
+
+            <div id="right_topForm">
+                <div id="birthdate_age-container">
+                    <div id="birthdate-container">
+                        <label for="Expected-time">Expected Time</label><br>
+                        <input type="date" name="Expected-time" id="Expected-time">
+                    </div>
+                </div>
+
+
+                <div id="gender-container">
+                    <p>Services</p>
+                    <div>
+                        <div>
+                            <input type="radio" id="Residential" value="Residential" name="gender">
+                            <label for="Residential">Residential</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Commercial" value="Commercial" name="gender">
+                            <label for="Commercial">Commercial </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Bond Cleaning" value="Bond Cleaning" name="gender">
+                            <label for="Bond Cleaning">Bond Cleaning</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="title-container">
+                    <label for="title">Payment method</label><br>
+                    <select id="title">
+                        <option value="student">Cash</option>
+                        <option value="teacher">Gcash</option>
+                        <option value="visitor">Visa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div id="botForm">
+            <div id="email-container">
+                <input type="checkbox" id="emailAccept">
+                <label for="emailAccept">Accept email from us?</label>
+            </div>
+
+            <div id="comment-container">
+                <label for="comment">Comment</label><br>
+                <textarea id="comment"></textarea>
+            </div>
+
+            <div id="buttons-container">
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </div>
+
+
+    </form>
+</body>
+<script src="systems.js"></script>
+</html>
